@@ -1,5 +1,4 @@
 const router = require('express').Router();
-
 const db = require('./users-model.js')
 
 router.get('/', async (req, res) => {
