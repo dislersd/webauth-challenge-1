@@ -11,15 +11,6 @@ router.get('/', async (req, res) => {
   }
 })
 
-router.post('/', async (req, res) => {
-  try {
-    await db.add(req.body);
-    res.status(201).json({ message: 'success!' })
-  } catch (error) {
-    res.status(500).json({ message: 'error creating user' })
-  }
-})
-
 module.exports = router;
 
 
