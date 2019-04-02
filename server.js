@@ -7,8 +7,8 @@ const sessionConfig = require("./sessions/sessionConfig.js");
 
 // bringing in session
 const session = require("express-session");
-server.use(session(sessionConfig));
 
+server.use(session(sessionConfig));
 server.use(express.json());
 server.use("/api/register", register);
 server.use("/api/login", login);
