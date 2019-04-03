@@ -18,13 +18,17 @@ const Login = () => {
 
   async function handleSubmit(e) {
     e.preventDefault()
-    const creds = {
-      username: userInput.username,
-      password: userInput.password,
+    try {
+      const creds = {
+        username: userInput.username,
+        password: userInput.password,
+      }
+      console.log(creds)
+      const res = await axios.post("http://localhost:3000/api/login", creds)
+      console.log(res)
+    } catch (error) {
+      console.log("you broke it");
     }
-    console.log(creds)
-    const res = await axios.post("http://localhost:3000/api/login", creds)
-    console.log(res)
   }
 
   return (
