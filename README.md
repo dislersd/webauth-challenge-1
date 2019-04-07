@@ -1,4 +1,4 @@
-# Authentication Project
+# Full Stack Application w NodeJS and React
 
 ## Topics
 
