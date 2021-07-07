@@ -28,7 +28,6 @@ class Login extends React.Component {
       <>
         <h1>Log in</h1>
         <form
-          method="post"
           onSubmit={event => {
             this.handleSubmit(event)
             navigate(`/app/profile`)
